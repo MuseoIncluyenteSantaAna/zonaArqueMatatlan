@@ -61,28 +61,11 @@
       text-align: center;
       margin-top: 20px;
     }
-      .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
   </style>
 </head>
 <body>
   <header>
-    <h1>Zona Arqueológica</h1>
+    <h1>Sala de Arqueología</h1>
     <a class="button" href="https://museosantaana.netlify.app/">Home</a>
   </header>
   
@@ -98,60 +81,95 @@
       <li data-target="#myCarousel" data-slide-to="6"></li>
       <li data-target="#myCarousel" data-slide-to="7"></li>
       <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#myCarousel" data-slide-to="9"></li>
+      <li data-target="#myCarousel" data-slide-to="10"></li>
+      <li data-target="#myCarousel" data-slide-to="11"></li>
+      <li data-target="#myCarousel" data-slide-to="12"></li>
+      <li data-target="#myCarousel" data-slide-to="13"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">
       <!-- Imágenes del carousel -->
       <div class="item active">
-        <img src="Aerea1.JPG" alt="Image 1" class="carousel-image">
+        <img src="1.JPG" alt="Image 1" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(1)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="Aerea3.JPG" alt="Image 2" class="carousel-image">
+        <img src="2.JPG" alt="Image 2" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(2)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="Aerea6.JPG" alt="Image 3" class="carousel-image">
+        <img src="3.JPG" alt="Image 3" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(3)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="Area2.JPG" alt="Image 4" class="carousel-image">
+        <img src="4.JPG" alt="Image 4" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(4)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="Area4.JPG" alt="Image 5" class="carousel-image">
+        <img src="5.JPG" alt="Image 5" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(5)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="DJI_0001.JPG" alt="Image 6" class="carousel-image">
+        <img src="6.JPG" alt="Image 6" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(6)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="DSC03971.JPG" alt="Image 7" class="carousel-image">
+        <img src="7.JPG" alt="Image 7" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(7)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="DSC04025.JPG" alt="Image 8" class="carousel-image">
+        <img src="8.JPG" alt="Image 8" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(8)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="aerea5.JPG.jpg" alt="Image 9" class="carousel-image">
+        <img src="9.JPG" alt="Image 9" class="carousel-image">
+        <div class="carousel-caption">
+          <button class="button" onclick="openPopup(8)">Más información</button>
+        </div>
+      </div>
+            <div class="item">
+        <img src="10.JPG" alt="Image 9" class="carousel-image">
+        <div class="carousel-caption">
+          <button class="button" onclick="openPopup(8)">Más información</button>
+        </div>
+      </div>
+            <div class="item">
+        <img src="11.JPG" alt="Image 9" class="carousel-image">
+        <div class="carousel-caption">
+          <button class="button" onclick="openPopup(8)">Más información</button>
+        </div>
+      </div>
+            <div class="item">
+        <img src="12.JPG" alt="Image 9" class="carousel-image">
+        <div class="carousel-caption">
+          <button class="button" onclick="openPopup(8)">Más información</button>
+        </div>
+      </div>
+            <div class="item">
+        <img src="13.JPG" alt="Image 9" class="carousel-image">
+        <div class="carousel-caption">
+          <button class="button" onclick="openPopup(8)">Más información</button>
+        </div>
+      </div>
+            <div class="item">
+        <img src="14.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(8)">Más información</button>
         </div>
@@ -183,7 +201,7 @@
       <source src="video.mp4" type="video/mp4">
     </video>
   </div>
-</div>
+  </div>
   
   <footer>
     <p>&copy; 2023 Museo Comunitario Shan-Dany Santa Ana Del Valle | Todos los derechos reservados</p>
@@ -244,6 +262,31 @@
           title = "Imagen 9";
           description = "Descripción de la imagen 9.";
           audioFile = "audio9.mp3";
+          break;
+       case 10:
+          title = "Imagen 10";
+          description = "Descripción de la imagen 10.";
+          audioFile = "audio10.mp3";
+          break;
+       case 11:
+          title = "Imagen 11";
+          description = "Descripción de la imagen 11.";
+          audioFile = "audio11.mp3";
+          break;
+       case 12:
+          title = "Imagen 12";
+          description = "Descripción de la imagen 12.";
+          audioFile = "audio12.mp3";
+          break;
+        case 13:
+          title = "Imagen 13";
+          description = "Descripción de la imagen 13.";
+          audioFile = "audio13.mp3";
+          break;
+        case 14:
+          title = "Imagen 14";
+          description = "Descripción de la imagen 14.";
+          audioFile = "audio14.mp3";
           break;
       }
       $("#popup-title").text(title);
