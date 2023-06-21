@@ -53,6 +53,27 @@
       float: right;
       margin-right: 50px;
     }
+     .section {
+      padding: 40px;
+      background-color: #333333;
+      text-align: center;
+    }
+    
+    .section:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+    
+    .section h2 {
+      margin-top: 0;
+      font-size: 40px;
+      font-family: 'Didot', sans-serif;
+    }
+    
+    .section p {
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-family: 'Didot', sans-serif;
+    }
 
     footer {
       background-color: #111;
@@ -68,6 +89,19 @@
     <h1>Zona Arqueológica</h1>
     <a class="button" href="https://museomatatlan.netlify.app">Home</a>
   </header>
+
+  <section class="section">
+  <h2>Bienvenidos a Nuestra Zona Arqueológica</h2>
+  <p>¿Quieres conocer más acerca de nuestra historia?</p>
+  <button class="button" onclick="openPopup(1)">¡Click aquí!</button> 
+  </section>
+
+  <div id="popup" class="section" style="display: none;">
+    <h2 id="popup-title"></h2>
+    <p id="popup-description"></p>
+    <button class="button" id="play-audio-button">Conoce Nuestra Historia</button>
+    <button class="button" onclick="closePopup()">Cerrar</button>
+  </div>
   
   <div id="myCarousel" class="carousel slide section" data-ride="carousel">
     <!-- Indicators -->
@@ -93,85 +127,85 @@
       <div class="item active">
         <img src="1.JPG" alt="Image 1" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(1)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="2.JPG" alt="Image 2" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(2)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="3.JPG" alt="Image 3" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(3)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="4.JPG" alt="Image 4" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(4)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="5.JPG" alt="Image 5" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(5)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="6.JPG" alt="Image 6" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(6)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="7.JPG" alt="Image 7" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(7)">Más información</button>
+          
         </div>
       </div>
       <div class="item">
         <img src="8.JPG" alt="Image 8" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
       <div class="item">
         <img src="9.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
             <div class="item">
         <img src="10.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
             <div class="item">
         <img src="11.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
             <div class="item">
         <img src="12.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
             <div class="item">
         <img src="13.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
             <div class="item">
         <img src="14.JPG" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          <button class="button" onclick="openPopup(8)">Más información</button>
+
         </div>
       </div>
     </div>
@@ -185,13 +219,6 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-
-  <div id="popup" class="section" style="display: none;">
-    <h2 id="popup-title"></h2>
-    <p id="popup-description"></p>
-    <button class="button" id="play-audio-button">Reproducir audio</button>
-    <button class="button" onclick="closePopup()">Cerrar</button>
   </div>
   
   <div class="section">
@@ -219,74 +246,9 @@
       var title, description, audioFile;
       switch (id) {
         case 1:
-          title = "Imagen 1";
-          description = "Descripción de la imagen 1.";
-          audioFile = "Foto1-Sala1-SAV.mp3";
-          break;
-        case 2:
-          title = "Imagen 2";
-          description = "Descripción de la imagen 2.";
-          audioFile = "Foto2-Sala1-SAV.mp3";
-          break;
-        case 3:
-          title = "Imagen 3";
-          description = "Descripción de la imagen 3.";
-          audioFile = "Foto3-Sala1-SAV.mp3";
-          break;
-        case 4:
-          title = "Imagen 4";
-          description = "Descripción de la imagen 4.";
-          audioFile = "audio4.mp3";
-          break;
-        case 5:
-          title = "Imagen 5";
-          description = "Descripción de la imagen 5.";
-          audioFile = "audio5.mp3";
-          break;
-        case 6:
-          title = "Imagen 6";
-          description = "Descripción de la imagen 6.";
-          audioFile = "audio6.mp3";
-          break;
-        case 7:
-          title = "Imagen 7";
-          description = "Descripción de la imagen 7.";
-          audioFile = "audio7.mp3";
-          break;
-        case 8:
-          title = "Imagen 8";
-          description = "Descripción de la imagen 8.";
-          audioFile = "audio8.mp3";
-          break;
-        case 9:
-          title = "Imagen 9";
-          description = "Descripción de la imagen 9.";
-          audioFile = "audio9.mp3";
-          break;
-       case 10:
-          title = "Imagen 10";
-          description = "Descripción de la imagen 10.";
-          audioFile = "audio10.mp3";
-          break;
-       case 11:
-          title = "Imagen 11";
-          description = "Descripción de la imagen 11.";
-          audioFile = "audio11.mp3";
-          break;
-       case 12:
-          title = "Imagen 12";
-          description = "Descripción de la imagen 12.";
-          audioFile = "audio12.mp3";
-          break;
-        case 13:
-          title = "Imagen 13";
-          description = "Descripción de la imagen 13.";
-          audioFile = "audio13.mp3";
-          break;
-        case 14:
-          title = "Imagen 14";
-          description = "Descripción de la imagen 14.";
-          audioFile = "audio14.mp3";
+          title = "EL PALMILLO";
+          description = "El Palmillo: sitio arqueológico en el Valle de Oaxaca con terrazas y casas en las laderas. Refleja diferenciación social y rituales, incluyendo juego de pelota y ofrendas. Destaca la importancia de las plantas en la economía. Una experiencia fascinante de la antigua civilización mesoamericana.";
+          audioFile = "Palmillo.mp3";
           break;
       }
       $("#popup-title").text(title);
